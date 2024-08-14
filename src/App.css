@@ -1,0 +1,103 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Center the app and give it a clean, modern look */
+.App {
+  width: 800px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Header styling */
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* SearchBar input styling */
+.SearchBar input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Remove bullet points and style the animal list as grid */
+.AnimalList ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  margin: 0;
+}
+
+/* Style each animal as a clickable box */
+.AnimalList li {
+  background-color: #10a37f;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+/* Hover effect for animal items */
+.AnimalList li:hover {
+  background-color: #0c7a63;
+}
+
+/* Styling for the animal detail section */
+.AnimalDetail {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #eaf7f2;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Animal detail heading styling */
+.AnimalDetail h2 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+/* Animal detail paragraph styling */
+.AnimalDetail p {
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+  .App {
+    width: 90%;
+  }
+
+  .AnimalList ul {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}
